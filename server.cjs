@@ -13,7 +13,7 @@ app.post('/screenshot', async (req, res) => {
 
   try {
     const browser = await puppeteer.launch({
-      headless: true 
+      headless: 'new' 
     });
     const page = await browser.newPage();
 
